@@ -10,7 +10,6 @@ public class Application {
 
         // BEGIN
         for (Method method : Address.class.getDeclaredMethods()) {
-
             // Проверяем, есть ли у метода аннотация @LogExecutionTime
             if (method.isAnnotationPresent(Inspect.class)) {
                 try {
